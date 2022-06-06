@@ -540,6 +540,7 @@ header {
 
 .form-field {
   display: block;
+  margin-top: 12px;
 }
 
 .form-input {
@@ -584,7 +585,7 @@ header {
   align-items: center;
   justify-content: space-between;
 
-  margin-top: 36px;
+  margin-top: 48px;
   margin-left: 12px;
   padding: 10px 28px;
   min-width: 200px;
