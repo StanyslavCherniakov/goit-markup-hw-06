@@ -604,6 +604,11 @@ header {
   border-radius: 4px;
 }
 
+.footer-form-btn:hover,
+.footer-form-btn:focus {
+  cursor: pointer;
+}
+
 /* Портфолио */
 .projects .list.buttons {
   display: flex;
@@ -794,6 +799,8 @@ textarea {
   padding: 11px 12px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-input-modal {
@@ -841,6 +848,11 @@ textarea {
   border: transparent;
 }
 
+.form-modal-btn:hover,
+.form-modal-btn:focus {
+  cursor: pointer;
+}
+
 .checkbox-label {
   display: block;
   margin-bottom: 30px;
@@ -860,7 +872,7 @@ textarea {
   position: absolute;
   top: 50%;
   left: 12px;
-
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: var(--secondary-text-color);
 }
 
@@ -871,5 +883,35 @@ textarea {
 .form-field-modal:focus-within > .form-input-modal,
 .form-field-modal:focus-within > .comment {
   outline: none;
+  border-color: var(--accent-color);
+}
+/* Чек-бокс */
+.checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.icona {
+  position: absolute;
+  bottom: 122px;
+  left: 40px;
+  width: 16px;
+  height: 15px;
+  border: 2px solid black;
+  border-radius: 2px;
+}
+
+.checkbox:checked ~ .icona {
+  background-image: url(../images/icon-check.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: var(--accent-color);
   border-color: var(--accent-color);
 }
