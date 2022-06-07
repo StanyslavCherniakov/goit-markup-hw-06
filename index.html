@@ -384,7 +384,7 @@
         <form class="footer-form">
           <label class="form-field">
             <span class="footer-form-text">Подпишитесь на рассылку</span>
-            <input class="form-input" type="text" name="email" placeholder="E-mail" />
+            <input class="form-input" type="email" name="email" placeholder="E-mail" />
           </label>
           <button class="footer-form-btn" type="submit">
             Подписаться
@@ -398,6 +398,32 @@
     <div data-modal class="backdrop is-hidden">
       <div class="modal">
         <button data-modal-close class="modal-btn" type="button"></button>
+
+        <form class="modal-form">
+          <p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
+          <label class="form-field-modal"
+            ><span>Имя</span>
+            <input class="form-input-modal" name="name" type="text" />
+          </label>
+          <label class="form-field-modal"
+            ><span>Телефон</span>
+            <input class="form-input-modal" name="tel" type="tel" />
+          </label>
+          <label class="form-field-modal"
+            ><span>Почта</span>
+            <input class="form-input-modal" name="email" type="email" />
+          </label>
+          <label class="form-field-modal">
+            <span>Комментарий</span>
+            <textarea
+              class="comment"
+              name="comment"
+              rows="6"
+              placeholder="Введите текст"
+            ></textarea>
+          </label>
+          <button class="form-modal-btn" type="submit">Отправить</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
