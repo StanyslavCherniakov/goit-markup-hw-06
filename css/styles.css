@@ -924,21 +924,24 @@ textarea {
   overflow: hidden;
 }
 
-.icona {
+.check-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   bottom: 122px;
-  left: 40px;
+  left: 52px;
   width: 16px;
   height: 15px;
   border: 2px solid black;
-  border-radius: 2px;
+  border-radius: 4px;
 }
 
-.checkbox:checked ~ .icona {
-  background-image: url(../images/icon-check.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
+.checkbox:checked ~ .check-icon {
   background-color: var(--accent-color);
   border-color: var(--accent-color);
+}
+
+.checkbox-label {
+  margin-left: 25px;
 }
